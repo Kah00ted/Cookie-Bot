@@ -12,7 +12,14 @@ cookieGoals = {
     "wizzard":0,
     "shipment":0,
     "alchLab":3,
-    "portal":10
+    "portal":10,
+    "timeMach":0,
+    "condenser":0,
+    "prism":0,
+    "chance":0,
+    "fracEngine":0,
+    "jsConsole":0,
+    "idleverse":0
 }
 
 function scanCookies(){
@@ -38,6 +45,20 @@ function scanCookies(){
         tryBuy(9)
     }else if (Game.ObjectsById['10'].amount < cookieGoals.portal){
         tryBuy(10)
+    }else if (Game.ObjectsById['11'].amount < cookieGoals.timeMach){
+        tryBuy(11)
+    }else if (Game.ObjectsById['12'].amount < cookieGoals.condenser){
+        tryBuy(12)
+    }else if (Game.ObjectsById['13'].amount < cookieGoals.prism){
+        tryBuy(13)
+    }else if (Game.ObjectsById['14'].amount < cookieGoals.chance){
+        tryBuy(14)
+    }else if (Game.ObjectsById['15'].amount < cookieGoals.fracEngine){
+        tryBuy(15)
+    }else if (Game.ObjectsById['16'].amount < cookieGoals.jsConsole){
+        tryBuy(16)
+    }else if (Game.ObjectsById['17'].amount < cookieGoals.idleverse){
+        tryBuy(17)
     }
 }
 
